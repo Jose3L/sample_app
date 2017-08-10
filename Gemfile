@@ -8,7 +8,10 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
+# Usada para el estilo CSS de BootStrap
 gem 'bootstrap-sass', '3.3.7'
+# Usada para el hash de las contraseñas
+gem 'bcrypt', '3.1.11'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
