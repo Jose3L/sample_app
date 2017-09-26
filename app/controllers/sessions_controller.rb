@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
   	user = User.find_by(email: params[:session][:email].downcase)
   	if user && user.authenticate(params[:session][:password])
   		log_in user
+      #******* There is a bug here, always save the token_remember with and without the checkbox activate ****
       params[:session][:remember_me] ? remember(user) : forget(user)
       remember user
   		redirect_to user
